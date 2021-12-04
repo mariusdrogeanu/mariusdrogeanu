@@ -1,0 +1,67 @@
+table {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+
+thead td {
+  background-color: lightslategray;
+  color: white;
+  height: 30px;
+  line-height: 50px;
+  font-weight: bold;
+  padding-left: 8px;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color: lightslategray;
+}
+
+tr td {
+  padding-left: 8px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.form {
+  display: none;
+  align-content: center;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid blue;
+  width: 200px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#save-button {
+  width: 180px;
+}
+
+#add-crew {
+  padding: 12px 20px;
+  margin-left: 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

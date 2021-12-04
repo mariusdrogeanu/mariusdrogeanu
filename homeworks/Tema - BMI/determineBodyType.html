@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .margin {
+        margin: 10px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>Calculate Bmi</p>
+      <div class="margin">
+        <label for="weight">weight</label>
+        <input type="text" id="weight" />
+      </div>
+      <div class="margin">
+        <label for="height">height</label>
+        <input type="text" id="height" />
+      </div>
+      <div class="margin">
+        <label for="name">name</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="margin">
+        <label for="gender">gender</label>
+        <input type="text" id="gender" />
+      </div>
+      <button type="button" class="margin" onclick="insertData()">
+        Create Person
+      </button>
+      <br />
+      <button type="button" class="margin" onclick="eraseData()">
+        Delete Persons
+      </button>
+      <br />
+      <button type="button" class="margin" onclick="displayData()">
+        Show Person Data
+      </button>
+      <br />
+      <button type="button" class="margin" onclick="Calcuate()">
+        Calculate BMI
+      </button>
+      <div id="showBodyType"></div>
+      <div id="showData"></div>
+    </div>
+    <script>
+      function createPerson() {
+        var weight = parseFloat(document.getElementById("weight").value);
+        var height = parseFloat(document.getElementById("height").value);
+        var name = document.getElementById("name").value;
+        var gender = document.getElementById("gender").value;
+
+        return {
+          name,
+          gender,
+          height,
+          weight,
+        };
+      }
+
+      function calculateBMI() {
+        var person = createPerson();
+        return person.weight / (person.height * person.height);
+      }
+
+      function determineBodyType() {
+        var BMI = calculateBMI();
+        var underweight = BMI < 18.5;
+        var normal = BMI > 18.5 && BMI < 25;
+        var overweight = BMI > 25 && BMI < 30;
+        if (underweight) {
+          return (weightRange = "underweight");
+        } else if (normal) {
+          return (weightRange = "normal");
+        } else if (overweight) {
+          return (weightRange = "overweight");
+        }
+
+        return (weightRange = "obese");
+      }
+
+      function Calcuate() {
+        var bodyType = document.getElementById("showBodyType");
+        // bodyType.innerText = "persons body type: " + determineBodyType(calculateBMI(person));
+        bodyType.innerText = `${
+          createPerson().name
+        } body type: ${determineBodyType()}`;
+      }
+
+      function displayData() {
+        var displayData = document.getElementById("showData");
+        for (var i = 0; i < personData.length; i++) {
+          displayData.innerText = `${personData.name[i]}`;
+        }
+      }
+
+      var personData = [];
+
+      function insertData() {
+        var weight = parseFloat(document.getElementById("weight").value);
+        var height = parseFloat(document.getElementById("height").value);
+        var name = document.getElementById("name").value;
+        var gender = document.getElementById("gender").value;
+        personData.push(
+          `name: ${name}, gender: ${gender}, weight: ${weight}, height: ${height}`
+        );
+        console.log(personData);
+        clearForm();
+      }
+
+      function clearForm() {
+        weight.value = "";
+        height.value = "";
+        name.value = "";
+        gender.value = "";
+      }
+
+      function eraseData() {
+        personData.length = 0;
+      }
+    </script>
+  </body>
+</html>

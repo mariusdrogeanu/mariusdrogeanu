@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>The Avengers</title>
+  </head>
+  <body>
+    <table id="crew-list">
+      <thead>
+        <td>ID</td>
+        <td>Character name</td>
+        <td>Actor/Actress name</td>
+        <td>Image</td>
+        <td>Action</td>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="form-container">
+      <form class="form">
+        <label for="id">Id</label>
+        <input type="number" name="id" id="actor-id" />
+        <label for="character-name">Character Name</label>
+        <input type="text" name="character-name" id="character-name" />
+        <label for="actor-name">Actor Name</label>
+        <input type="text" name="actor-name" id="actor-name" />
+        <label for="picture">Picture</label>
+        <input type="text" name="picture" id="picture" />
+        <input type="button" id="save-button" value="Save" />
+      </form>
+    </div>
+    <button id="add-crew">Add crew member</button>
+    <script src="assets/js/3rd-party/jquery.js"></script>
+    <script src="/assets/js/Application.js"></script>
+    <script src="/assets/js/Actor.js"></script>
+    <script>
+      $(document).ready(function () {
+        var actorsApplication = new Application("Actors' list");
+        actorsApplication.init();
+      });
+    </script>
+  </body>
+</html>

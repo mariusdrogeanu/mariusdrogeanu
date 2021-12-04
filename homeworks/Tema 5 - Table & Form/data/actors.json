@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "actorName": "Robert Downey Jr.",
+    "characterName": "Iron Man",
+    "pictureURL": "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_UX32_CR0,0,32,44_AL_.jpg"
+}, {
+    "id": 2,
+    "actorName": "Chris Evans",
+    "characterName": "Captain America",
+    "pictureURL": "https://m.media-amazon.com/images/M/MV5BMTU2NTg1OTQzMF5BMl5BanBnXkFtZTcwNjIyMjkyMg@@._V1_UX32_CR0,0,32,44_AL_.jpg"
+}, {
+    "id": 3,
+    "actorName": "Mark Ruffalo",
+    "characterName": "Hulk",
+    "pictureURL": "https://m.media-amazon.com/images/M/MV5BNWIzZTI1ODUtZTUzMC00NTdiLWFlOTYtZTg4MGZkYmU4YzNlXkEyXkFqcGdeQXVyNTExOTk5Nzg@._V1_UX32_CR0,0,32,44_AL_.jpg"
+}, {
+    "id": 4,
+    "actorName": "Chris Hemsworth",
+    "characterName": "Thor",
+    "pictureURL": "https://m.media-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._V1_UX32_CR0,0,32,44_AL_.jpg"
+}, {
+    "id": 5,
+    "actorName": "Scarlet Johansson",
+    "characterName": "Black Widow",
+    "pictureURL": "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY44_CR2,0,32,44_AL_.jpg"
+}]

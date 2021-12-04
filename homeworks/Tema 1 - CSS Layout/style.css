@@ -1,0 +1,52 @@
+.boxes {
+  text-align: center;
+  float: left;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.icons-heart {
+  color: lightgray;
+  margin-left: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.icons-star {
+  color: darkorange;
+}
+
+p {
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+  width: 20em;
+}
+
+.cart-button {
+  background-color: black;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  border: none;
+  height: 45px;
+  width: 115px;
+}
+
+.view-button {
+  height: 45px;
+  width: 115px;
+  border: solid black 3px;
+  background-color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.heart-2 {
+  color: red;
+}
