@@ -1,0 +1,4 @@
+https://jsfiddle.net/mariusdrogeanu/wf416v9b/30/ - Exercitiul 1, verificare daca este array
+https://jsfiddle.net/mariusdrogeanu/86vpks4x/3/ - Exercitiul 2, clonare array
+https://jsfiddle.net/mariusdrogeanu/86vpks4x/32/ - Exercitiul 5, Unire de elemente din array
+https://jsfiddle.net/mariusdrogeanu/86vpks4x/48/ -  Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8. Asta nu i-am dat de cap.

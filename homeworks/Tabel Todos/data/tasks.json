@@ -1,0 +1,43 @@
+[{
+"taskName": "Schedule meeting", 
+"taskDescription": "Find a good time and place for the meeting",
+"status": "To Do",
+"startDate": "11.03.2021",
+"dueDate": "25.03.2021",
+"assignedUser": "John McCain"
+}, {
+    "taskName": "Finish report", 
+    "taskDescription": "Add all chapters to the report",
+    "status": "In progress",
+    "startDate": "5.03.2021",
+    "dueDate": "20.03.2021",
+    "assignedUser": "George Bush"  
+}, {
+    "taskName": "Call Mr. Johnson", 
+    "taskDescription": "Call Mr. Johnson to request budget",
+    "status": "Done",
+    "startDate": "8.03.2021",
+    "dueDate": "10.03.2021",
+    "assignedUser": "Bill Clinton"
+}, {
+    "taskName": "Buy a company", 
+    "taskDescription": "Buy a company for fun",
+    "status": "To Do",
+    "startDate": "6.04.2021",
+    "dueDate": "12.05.2021",
+    "assignedUser": "Donald Trump"
+}, {
+    "taskName": "Win the lottery", 
+    "taskDescription": "Get rich nice and easy",
+    "status": "In progress",
+    "startDate": "15.04.2021",
+    "dueDate": "25.05.2021",
+    "assignedUser": "Barack Obama"
+}, {
+    "taskName": "Make world peace", 
+    "taskDescription": "Be nice to other countries",
+    "status": "To Do",
+    "startDate": "30.07.2021",
+    "dueDate": "10.08.2099",
+    "assignedUser": "George W. Bush"
+}]

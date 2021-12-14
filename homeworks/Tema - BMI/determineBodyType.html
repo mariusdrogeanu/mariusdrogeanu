@@ -15,19 +15,19 @@
     <div>
       <p>Calculate Bmi</p>
       <div class="margin">
-        <label for="weight">weight</label>
+        <label for="weight">Weight (kg)</label>
         <input type="text" id="weight" />
       </div>
       <div class="margin">
-        <label for="height">height</label>
+        <label for="height">Height (meters)</label>
         <input type="text" id="height" />
       </div>
       <div class="margin">
-        <label for="name">name</label>
+        <label for="name">Name</label>
         <input type="text" id="name" />
       </div>
       <div class="margin">
-        <label for="gender">gender</label>
+        <label for="gender">Gender</label>
         <input type="text" id="gender" />
       </div>
       <button type="button" class="margin" onclick="insertData()">
@@ -38,16 +38,13 @@
         Delete Persons
       </button>
       <br />
-      <button type="button" class="margin" onclick="displayData()">
-        Show Person Data
-      </button>
-      <br />
       <button type="button" class="margin" onclick="Calcuate()">
         Calculate BMI
       </button>
       <div id="showBodyType"></div>
       <div id="showData"></div>
     </div>
+    <p id="showData"></p>
     <script>
       function createPerson() {
         var weight = parseFloat(document.getElementById("weight").value);
@@ -90,13 +87,6 @@
         bodyType.innerText = `${
           createPerson().name
         } body type: ${determineBodyType()}`;
-      }
-
-      function displayData() {
-        var displayData = document.getElementById("showData");
-        for (var i = 0; i < personData.length; i++) {
-          displayData.innerText = `${personData.name[i]}`;
-        }
       }
 
       var personData = [];

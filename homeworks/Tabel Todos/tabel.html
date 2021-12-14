@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Tasks Table</title>
+  </head>
+  <body>
+    <table id="task-table">
+      <thead>
+        <td>Task name</td>
+        <td>Task description</td>
+        <td>Status</td>
+        <td>Start date</td>
+        <td>Due date</td>
+        <td>Assigned User</td>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <input id="filter" type="text" placeholder="Search task name" />
+    <button id="filter-button">Search</button>
+
+    <script src="/assets/js/3rd-party/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/Application.js"></script>
+    <script src="/assets/js/Task.js"></script>
+    <script>
+      $(document).ready(function () {
+        var tasksApplication = new Application("Task Table");
+        tasksApplication.init();
+      });
+    </script>
+  </body>
+</html>
